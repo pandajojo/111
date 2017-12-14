@@ -21,7 +21,10 @@
                         if (data.status == 200 && $('.yyy').val() == 4812) {
                             // 显示登录成功
                             // console.log(data.info)
-                            $('.result_msg ').show().text(data.info)
+                            
+                           window.location.href='https://www.baidu.com'
+                            // console.log(2)
+                            // $('.result_msg ').show().text(data.info)
                             $('.tps_reg_btn').css({ display: 'block' })
                             $('.tps_reg_btns').css({ display: 'none' })
                         } else if (data.status === 401) {
