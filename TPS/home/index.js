@@ -5,7 +5,7 @@
        
 
         // carousel设置
-        $('.banner .carousel').carousel({ interval: 2000 })
+        $('.banner .carousel').carousel({ interval: 3000 })
         $('.carousel-btn').css({display:'none'})
         $('.banner .carousel').hover(function() {
             $('.carousel-btn').css({ display: 'block' })
