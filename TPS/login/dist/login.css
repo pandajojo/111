@@ -1,0 +1,108 @@
+.tps_reg {
+  margin-bottom: -40px;
+  width: 100%;
+  height: 600px;
+  background: url(../../img/reg_bg.gif) no-repeat center; }
+  .tps_reg .tps_reg_box {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 30px 35px;
+    width: 380px;
+    background: #fff;
+    box-sizing: border-box; }
+    .tps_reg .tps_reg_box .reg_nav {
+      width: 314px;
+      height: 45px;
+      color: #999;
+      text-align: center;
+      font-size: 18px;
+      line-height: 45px;
+      font-weight: 600; }
+    .tps_reg .tps_reg_box .mail_reg {
+      margin-top: 25px;
+      width: 314px; }
+    .tps_reg .tps_reg_box ul li {
+      margin-bottom: 8px;
+      position: relative; }
+    .tps_reg .tps_reg_box .tps_input {
+      padding-left: 30px;
+      width: 300px;
+      height: 40px;
+      outline: 0;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #999;
+      box-sizing: border-box; }
+    .tps_reg .tps_reg_box .icon-ren {
+      position: absolute;
+      font-size: 15px;
+      top: 11px;
+      left: 8px;
+      color: #333; }
+    .tps_reg .tps_reg_box .icon-mima {
+      position: absolute;
+      font-size: 15px;
+      top: 11px;
+      left: 8px;
+      color: #333; }
+    .tps_reg .tps_reg_box .tps_input.yyy {
+      width: 160px;
+      float: left;
+      margin-right: 20px;
+      box-sizing: border-box; }
+    .tps_reg .tps_reg_box .yzm {
+      width: 120px;
+      height: 40px; }
+    .tps_reg .tps_reg_box .tps_reg_btns {
+      display: none;
+      width: 314px;
+      height: 45px;
+      border: 0;
+      border-radius: 6px;
+      background: #cccccc;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      line-height: 45px;
+      cursor: pointer;
+      margin-top: 14px;
+      transition: all 1s; }
+    .tps_reg .tps_reg_box .tps_reg_btn {
+      display: block;
+      width: 314px;
+      height: 45px;
+      border: 0;
+      border-radius: 6px;
+      background: #ed4242;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      line-height: 45px;
+      cursor: pointer;
+      margin-top: 14px;
+      transition: all 1s; }
+      .tps_reg .tps_reg_box .tps_reg_btn:hover {
+        background: #c80606;
+        transition: all 1s; }
+
+.pr {
+  position: relative;
+  height: 100%; }
+
+.result_msg, .code_msg {
+  text-align: left;
+  font-size: 12px;
+  color: #d22215;
+  margin-top: 5px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.c-b, a.c-b {
+  color: #3388ff; }
+  .c-b:hover, a.c-b:hover {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=login.css.map */
