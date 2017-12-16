@@ -17,6 +17,7 @@
                         password: $('input[name=password]').val(),
                     },
                     success: function (data) {
+                        console.log(data)
                         data = JSON.parse(data);
                         if (data.status == 200 && $('.yyy').val() == 4812) {
                             // 显示登录成功
