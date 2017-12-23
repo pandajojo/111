@@ -36,6 +36,14 @@ button:active {
   border-radius: 6px;
   font-size: 16px; }
 
+.btn-default {
+  color: #fff;
+  background-color: #c20000;
+  border-color: #d20000; }
+
+.ui-datepicker-month {
+  float: left; }
+
 .btn-gray:hover,
 .btn-gray:focus,
 .btn-gray:active,
