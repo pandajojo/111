@@ -73,6 +73,27 @@ button:active {
 .item-head .icon-fa-asterisk {
   color: #F00; }
 
+*:before,
+*:after,
+*:link,
+*:visited,
+*:hover,
+*:active,
+*:focus,
+* {
+  -o-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+  -webkit-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+  -moz-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+  transition: color .20s linear, background-color .20s linear, border-color .20s linear; }
+
+a {
+  color: #fff; }
+
+a:hover,
+a:focus {
+  color: #f00;
+  text-decoration: none; }
+
 ::-webkit-selection {
   background-color: #F00; }
 
