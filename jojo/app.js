@@ -11,10 +11,10 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var regSave = require('./routes/regSave');
 var loginCheck = require('./routes/loginCheck');
-var reg = require('./routes/reg');
-var goodsSave = require('./routes/goodsSave');
-var goodslist = require('./routes/goodslist');
-var goodsdetail = require('./routes/goodsdetail');
+// var reg = require('./routes/reg');
+// var goodsSave = require('./routes/goodsSave');
+// var goodslist = require('./routes/goodslist');
+// var goodsdetail = require('./routes/goodsdetail');
 
 var app = express();
 
@@ -41,10 +41,10 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/regSave', regSave);
 app.use('/loginCheck', loginCheck);
-app.use('/reg', reg);
-app.use('/goodsSave', goodsSave);
-app.use('/goodslist', goodslist);
-app.use('/goodsdetail', goodsdetail);
+// app.use('/reg', reg);
+// app.use('/goodsSave', goodsSave);
+// app.use('/goodslist', goodslist);
+// app.use('/goodsdetail', goodsdetail);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

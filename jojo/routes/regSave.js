@@ -16,9 +16,10 @@ router.post('/', function (req, res, next) {
         if (isSuccess) {
             //3、给前端响应
             //res.send("注册成功！");
-            res.redirect("html/login.html");
+            // res.redirect("html/login.html");
+            res.send("html/login.html");
         } else {
-            res.send("<script>alert('亲，用户名已经存在，请重新选择！');location.href='register.html';</script>");
+            res.send("<script>alert('亲，该邮箱已经存在，请重新选择！');location.href='register.html';</script>");
         }
     });
 });
