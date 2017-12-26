@@ -23,11 +23,12 @@
 
 
 
-        $('.pic').hover(function() {
+        // $('.pic').hover(function() {
+        //     this.animate({})
 
-        },function(){
-            
-        })
+        // },function(){
+
+        // })
 
 
 

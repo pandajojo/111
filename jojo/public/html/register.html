@@ -89,7 +89,7 @@
                         电子邮件 </div>
                     <div class="col-sm-9 item-body">
                         <div class="col-sm-12">
-                            <input type="email" class="form-control" name="register[email]" id="email" value="" placeholder="电子邮件">
+                            <input type="email" class="form-control" name="email" id="email" value="" placeholder="电子邮件">
                             <!-- <div id="email-error" class="error" style="display:none"></div> -->
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                         密码 </div>
                     <div class="col-sm-9 item-body">
                         <div class="col-sm-12">
-                            <input type="password" class="form-control" name="pwd" id="pwd" placeholder="密码">
+                            <input type="password" class="form-control" name="password" id="pwd" placeholder="密码">
                             <!-- <div id="pwd-error" class="error" style="display:none"></div> -->
                         </div>
                     </div>
@@ -910,7 +910,8 @@
                 <input type="hidden" name="action" value="gr_member_register">
                 <div class="form-group">
                     <div class="col-sm-12 text-center">
-                        <button id="member-register-btn" type="submit" class="btn btn-default btn-xs-block">发送</button>
+                        <!-- <button id="member-register-btn" type="submit" class="btn btn-default btn-xs-block">发送</button> -->
+                        <input id="member-register-btn" type="submit" class="btn btn-default btn-xs-block" value="发送">
                         <a href="javascript:;" class="btn btn-gray btn-xs-block">取消</a>
                     </div>
                 </div>

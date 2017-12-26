@@ -122,23 +122,23 @@
                         'register[address]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
                         'register[city]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
                         'register[area]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
-                        'register[email]':
-                            {
-                                required: true,
-                                email: true,
-                                remote:
-                                    {
-                                        url: 'javascript:;',
-                                        type: "post",
-                                        data:
-                                            {
-                                                msi_csrf: $("input[name=msi_csrf]").val(),
-                                                new_email: function () { return $("#email").val(); },
-                                                action: 'check_email'
-                                            }
-                                    }
-                            },
-                        'pwd':
+                        // 'email':
+                        //     {
+                        //         required: true,
+                        //         email: true,
+                        //         remote:
+                        //             {
+                        //                 url: 'javascript:;',
+                        //                 type: "post",
+                        //                 data:
+                        //                     {
+                        //                         msi_csrf: $("input[name=msi_csrf]").val(),
+                        //                         new_email: function () { return $("#email").val(); },
+                        //                         action: 'check_email'
+                        //                     }
+                        //             }
+                        //     },
+                        'password':
                             {
                                 required: true,
                                 minlength: 6,
@@ -152,22 +152,22 @@
                         'register[first_name]': 'required',
                         'register[country]': 'required',
                         'register[tel]': { required: function () { return (country.val() == 'Taiwan' || country.val() == 'China' ? true : false); } },
-                        'captcha':
-                            {
-                                required: true,
-                                number: true,
-                                remote:
-                                    {
-                                        url: 'javascript:;',
-                                        type: "post",
-                                        data:
-                                            {
-                                                msi_csrf: $("input[name=msi_csrf]").val(),
-                                                captcha: function () { return $("input[name=captcha]").val(); },
-                                                action: 'check_captcha'
-                                            }
-                                    }
-                            }
+                        // 'captcha':
+                        //     {
+                        //         required: true,
+                        //         number: true,
+                        //         remote:
+                        //             {
+                        //                 url: 'javascript:;',
+                        //                 type: "post",
+                        //                 data:
+                        //                     {
+                        //                         msi_csrf: $("input[name=msi_csrf]").val(),
+                        //                         captcha: function () { return $("input[name=captcha]").val(); },
+                        //                         action: 'check_captcha'
+                        //                     }
+                        //             }
+                        //     }
                     },
                 messages:
                     {
@@ -175,7 +175,7 @@
                         'register[birth_y]': "请选择您生日的年份。",
                         'register[birth_m]': "请选择您生日的月份。",
                         'register[birth_d]': "请选择您生日的日期。",
-                        'pwd':
+                        'password':
                             {
                                 required: "请输入密码。",
                                 minlength: "其长度必须是 6 到 12 个字符。",
