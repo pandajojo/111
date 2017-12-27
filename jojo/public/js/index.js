@@ -23,11 +23,7 @@
 
 
 
-        $('.pic').hover(function() {
-
-        },function(){
-            
-        })
+       
 
 
 

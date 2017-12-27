@@ -95,7 +95,7 @@
 
             <div class="index_logonbox">
                 <h1>Login</h1>
-                <form action="javascript:;" accept-charset="utf-8" id="gr-login-form" class="form-horizontal"
+                <form action="/loginCheck" accept-charset="utf-8" id="gr-login-form" class="form-horizontal"
                     method="POST" role="form" novalidate="novalidate">
                     <div style="display:none;">
                         <input type="hidden" name="msi_csrf" value="9de73d1d8a12ca323a1f2b23a4517073">
@@ -135,7 +135,8 @@
 
                     <div class="form-group">
                         <div class="col-sm-9 col-sm-offset-3 ">
-                            <button id="home-login-btn" type="submit" tabindex="4" class="btn btn-default btn-xs-block">登录</button>
+                            <!-- <button id="home-login-btn" type="submit" tabindex="4" class="btn btn-default btn-xs-block">登录</button> -->
+                            <input id="home-login-btn" type="submit" tabindex="4" class="btn btn-default btn-xs-block" value="登录">
                             <a href="register.html" tabindex="5" class="btn btn-link btn-xs-block link-gaming" data-toggle="tooltip"
                                 title data-original-title="尊敬的 MSI 客户：<br/>
 MSI 强烈建议我们的客户注册您的产品，以获得更快捷的技术支持和保修服务（包括延长保修）。MSI 的产品注册属自愿行为；不注册并不会失去您在质保期内的保修权利。<br/>

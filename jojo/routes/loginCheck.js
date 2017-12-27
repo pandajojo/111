@@ -5,21 +5,22 @@ var userinfosdb = require("../db/userinfosdb");
 /* POST users listing. */
 router.post('/', function (req, res, next) {
     //1、接收前端传来的数据
-    let username = req.body.username;
-    let userpass = req.body.userpass;
+    let email = req.body.email;
+    let password = req.body.password;
 
     //2、链接数据库（判断）
-    userinfosdb.find({ "username": username, "userpass": userpass }, function (userinfos) {
+    userinfosdb.find({ "email": email, "password": password }, function (userinfos) {
         if (userinfos.length == 0) {
-            res.send("<script>alert('用户名或者密码不正确');location.href='login.html'</script>");
+            res.send("<script>alert('用户名或者密码不正确');location.href='html/login.html'</script>");
+            // res.send("<script>alert('用户名或者密码不正确')</script>");
         } else {
             //保存session
-            req.session.username = username;
+            req.session.email = email;
             //保存cookie
-            res.cookie("username", username);
+            res.cookie("email", email);
 
             //跳转到首页
-            res.redirect("index.html");
+            res.redirect("html/index.html");
         }
     });
 
