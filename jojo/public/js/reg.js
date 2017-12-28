@@ -103,12 +103,22 @@
 
 
         // Submit Form
-        $('#submit').click(function (e) {
-            // _block_ui('资料载入中，请稍后');
-            e.preventDefault();
-            $("#gr-member-register").submit();
-            return false;
+
+
+
+        $.validator.setDefaults({
+            submitHandler: function () {
+                alert("提交事件!");
+            }
         });
+
+
+        // $('#submit').click(function (e) {
+        //     // _block_ui('资料载入中，请稍后');
+        //     e.preventDefault();
+        //     $("#gr-member-register").submit();
+        //     return false;
+        // });
         
             
             
@@ -117,11 +127,11 @@
                 
                 rules:
                     {
-                        'register[birth]': { required: function (e) { return (country.val() == 'Russia' ? true : false); } },
-                        'register[zipcode]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
-                        'register[address]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
-                        'register[city]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
-                        'register[area]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
+                        // 'register[birth]': { required: function (e) { return (country.val() == 'Russia' ? true : false); } },
+                        // 'register[zipcode]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
+                        // 'register[address]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
+                        // 'register[city]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
+                        // 'register[area]': { required: function (e) { return (country.val() == 'United States' || country.val() == 'Canada' ? true : false); } },
                         // 'email':
                         //     {
                         //         required: true,
@@ -132,9 +142,9 @@
                         //                 type: "post",
                         //                 data:
                         //                     {
-                        //                         msi_csrf: $("input[name=msi_csrf]").val(),
-                        //                         new_email: function () { return $("#email").val(); },
-                        //                         action: 'check_email'
+                        //                        
+                                                    // email:$('input[name=email]').val()
+                                                    // action:'/regSave'
                         //                     }
                         //             }
                         //     },
@@ -162,9 +172,6 @@
                         //                 type: "post",
                         //                 data:
                         //                     {
-                        //                         msi_csrf: $("input[name=msi_csrf]").val(),
-                        //                         captcha: function () { return $("input[name=captcha]").val(); },
-                        //                         action: 'check_captcha'
                         //                     }
                         //             }
                         //     }
@@ -219,9 +226,9 @@
                         error.insertAfter(element);
                     }
                 },
-                onfocusout: false,
-                onclick: false,
-                onkeyup: false
+                // onfocusout: false,
+                // onclick: false,
+                // onkeyup: false
             });
 
         
