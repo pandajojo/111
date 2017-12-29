@@ -16,8 +16,11 @@ router.post('/', function (req, res, next) {
         } else {
             //保存session
             req.session.email = email;
+            console.log(req.session.email)
             //保存cookie
+           
             res.cookie("email", email);
+            console.log(res.cookie("email", email))
 
             //跳转到首页
             res.redirect("html/index.html");

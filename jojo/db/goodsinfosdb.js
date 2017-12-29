@@ -7,7 +7,7 @@ const dbconn = require("./dbconn")();
 
 //创建模板（跟数据库中集合的结构要一致）
 let goodsinfosSchema = new mongoose.Schema({
-   goodsId    :String,
+   goodsid    :String,
    goodsname  :String,
    goodsprice :Number,
    goodsnum   :Number,
@@ -35,10 +35,12 @@ module.exports = {
     //查询goodsinfos集合中的数据
     "find":function(condition,callback){
         goodsinfosModel.find(condition,(err,data)=>{
+            console.log('条件'+condition)
             if(err){
                 console.log(err);
                 callback([]);
             }else{
+                console.log("goodsinfosdb__data:"+data);
                 callback(data);
             }
         });
