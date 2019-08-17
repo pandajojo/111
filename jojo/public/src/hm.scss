@@ -1,0 +1,490 @@
+.promotion_area,
+.spotlight_area,
+.spotlight_area .pic,
+.video_area {
+    overflow: hidden
+}
+
+.home_play {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/playIcon.png) no-repeat;
+    left: 45%;
+    top: 45%;
+    cursor: pointer;
+    z-index: 3
+}
+// 注释
+
+#youtube-close-button {
+    background-image: url(../img/btn_close.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 26px;
+    right: 18%;
+    position: absolute;
+    top: 8px;
+    width: 28px;
+    z-index: 999999
+}
+
+.article-cover-overlay,
+.promotion-cover-overlay {
+    background-color: #f10000;
+    height: 20%;
+    position: absolute;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out
+}
+
+.btn_previous,
+.btn_previous_off {
+    position: absolute;
+    left: -3%;
+    top: 50%
+}
+
+.btn_next,
+.btn_next_off {
+    position: absolute;
+    right: -3%;
+    top: 50%
+}
+
+.vga_latestnewsbox .bx-wrapper {
+    margin: 0 auto 0 0
+}
+
+.footer .row,
+.video_area .bx-wrapper {
+    margin-left: 0
+}
+
+@media screen and (max-width:960px) {
+    .video-title {
+        display: none
+    }
+    .video_area .bx-wrapper .bx-controls-direction a {
+        top: 70%
+    }
+}
+
+.video_area .vbox {
+    padding: 0
+}
+
+.fbbox {
+    text-align: center
+}
+
+.fb-comments,
+.fb-comments iframe[style],
+.fb-comments span,
+.fb-page,
+.fb-page iframe[style],
+.fb-page span {
+    width: 100%!important
+}
+
+.article_area,
+.promotion_area {
+    padding: 1px;
+    overflow: hidden
+}
+
+.news_list {
+    padding: 0
+}
+
+#home-news-list img {
+    border-radius: 6px;
+    transition-property: background, border-radius;
+    transition-duration: .5s;
+    transition-timing-function: linear
+}
+
+#home-news-list:hover img {
+    border-radius: 80%
+}
+
+.footer .row {
+    margin-right: 0
+}
+
+.article-cover-overlay {
+    bottom: 0;
+    opacity: 0;
+    transition: all .4s ease-out;
+    width: 100%;
+    z-index: 2
+}
+
+.home-article-title {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    z-index: 3
+}
+
+.article_area:hover .article-cover-overlay {
+    opacity: .5
+}
+
+.article_area:hover .home-article-title {
+    opacity: 1;
+    bottom: 5%
+}
+
+.promotion-cover-overlay {
+    opacity: 0;
+    bottom: 0;
+    transition: all .4s ease-out;
+    width: 100%;
+    z-index: 2
+}
+
+.home-promotion-title,
+.home-video-title {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    text-align: center
+}
+
+.home-promotion-title {
+    bottom: 0;
+    opacity: 0;
+    font-size: 26px
+}
+
+.promotion_area:hover .promotion-cover-overlay {
+    opacity: .5
+}
+
+.promotion_area:hover .home-promotion-title {
+    opacity: 1;
+    bottom: 5%
+}
+
+.page-container,
+body {
+    background-color: rgba(6, 6, 6, 1)
+}
+
+.home_max_width1 {
+    margin-left: -130px;
+    margin-right: -130px
+}
+
+.home_max_width2 {
+    margin-left: -45px;
+    margin-right: -45px
+}
+
+.home-video-title {
+    top: 10%;
+    font-size: 16px
+}
+
+.home-video:hover .video-cover-overlay {
+    opacity: 0
+}
+
+.home-video:hover .home-video-title {
+    opacity: .1
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+@media screen and (max-width:767px) {
+    .row-eq-height {
+        display: block
+    }
+    .home_max_width2 {
+        margin-left: -30px;
+        margin-right: -30px
+    }
+}
+
+p.font01 {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.2em
+}
+
+.home_news_block h3,
+.home_service_block h3 {
+    font-size: 30px
+}
+
+.video-cover-overlay {
+    background-color: #121212;
+    height: 100%;
+    opacity: .7;
+    bottom: 0;
+    position: absolute;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    width: 100%;
+    z-index: 2
+}
+
+.home_service_block {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.home_news_block {
+    background: url(../img/home_newsBg.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.home_news_line {
+    color: #fff;
+    background-color: #fff;
+    width: 80px;
+    height: 3px;
+    border-radius: 10px
+}
+
+.spotlight .pic {
+    text-align: center
+}
+
+.home_vidoe_block .bx-pager-item {
+    display: none!important
+}
+
+@media (min-width:768px) and (max-width:1280px) {
+    .home_max_width1,
+    .home_max_width2 {
+        margin-left: -15px;
+        margin-right: -15px
+    }
+}
+
+.home_service_icon {
+    text-align: right
+}
+
+.home_sp_banner_block img {
+    width: 100%
+}
+
+#bannerMiddle {
+    display: block
+}
+
+#bannerMiddle h2 {
+    color: #FFF;
+    font-size: 2.8em
+}
+
+.homeForum {
+    background: url(../img/forums_bg.jpg) top center no-repeat;
+    background-size: cover;
+    padding: 2%;
+    color: #FFF
+}
+
+.homeFacebook {
+    background: url(../img/socialMedia_bg.jpg) top center no-repeat;
+    background-size: cover;
+    padding: 2%;
+    color: #FFF
+}
+
+.btnRed,
+.btndarkgray {
+    padding: 10px;
+    margin: 10px 0;
+    display: block
+}
+
+.btnRed {
+    background: #e60014;
+    transition: all ease-in .2s;
+    color: #FFF
+}
+
+.btnRed:hover {
+    background: #202020;
+    color: #fffff
+}
+
+.btnRed a {
+    display: block;
+    color: #FFF
+}
+
+.btnRed a:hover {
+    color: #fff
+}
+
+.btndarkgray {
+    background: #202020
+}
+
+.btndarkgray:hover {
+    background: #e60014
+}
+
+.btndarkgray a,
+.btndarkgray a:hover {
+    color: #FFF
+}
+
+#twitter {
+    display: block
+}
+
+#twitter .big-section {
+    color: #FFF;
+    padding-top: 10px
+}
+
+#twitter .row {
+    margin-bottom: 10px;
+    text-align: center
+}
+
+#twitter-rectangle .tw-outside {
+    background: #4080ff;
+    display: block;
+    height: 55px;
+    position: relative
+}
+
+#twitter-rectangle .tw-click,
+#twitter-rectangle .tw-text {
+    display: block;
+    height: 100%;
+    padding-top: 15px;
+    position: absolute;
+    width: 100%;
+    transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -webkit-transition: .3s ease all
+}
+
+#twitter-rectangle .tw-text {
+    font-size: 1.2em;
+    font-weight: 180;
+    z-index: 2
+}
+
+#twitter-rectangle .tw-click {
+    z-index: 1
+}
+
+.tw-2 .tw-text {
+    background: red;
+    height: 100%;
+    width: 100%;
+    padding: 10px
+}
+
+.tw-2:hover .tw-text {
+    margin-top: -55px
+}
+
+@media screen and (min-width:768px) and (max-width:1366px) {
+    .home_max_width2 {
+        margin-left: -45px;
+        margin-right: -45px
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1440px) {
+    #twitter-rectangle .tw-outside {
+        height: 80px
+    }
+    .fb-like {
+        margin-top: 25px
+    }
+}
+
+.youtube-subscribe2 {
+    position: relative;
+    margin-top: -29px;
+    margin-left: -40px
+}
+
+.youtube-subscribe {
+    position: absolute;
+    bottom: 12%;
+    z-index: 99999999
+}
+
+.youtube-subscribe-block {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #000;
+    display: none
+}
+
+.ytsubscribe-showhidebtn {
+    background: red;
+    cursor: pointer;
+    padding: 5px;
+    color: #fff
+}
+
+#youtube-close-button-subscribe {
+    background-image: url(../img/btn_close.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 26px;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+    z-index: 999999;
+    display: none
+}
+
+.home_vidoe_block p {
+    padding-top: 40px
+}
+
+.home_service_block img {
+    width: 60%;
+    float: right
+}
+
+.home_news_block img {
+    width: 18%
+}
+
+@media screen and (min-width:768px) and (max-width:1440px) {
+    .home_service_block img {
+        width: 50%;
+        padding-top: 30px
+    }
+}
+
+@media screen and (max-width:960px) {
+    .home_service_block img {
+        width: 80%;
+        padding-top: 20px
+    }
+}

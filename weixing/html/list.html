@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.bxslider.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/common.css">
+    <link rel="stylesheet" href="../dist/list.css">
+    <link rel="stylesheet" href="../dist/main.css">
+    <link rel="stylesheet" href="../dist/slider.css">
+    <link rel="stylesheet" href="../dist/hm.css">
+    <title>列表页</title>
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="container-fluid3">
+                <div class="custompotal hidden-xs" style="position: absolute;float:right;right: 0px;z-index: 999;">
+                    <a href="javascript:;" class="fl" title="微星游戏本苏宁旗舰店">微星游戏本苏宁旗舰店</a>&nbsp;&nbsp;
+                    <a href="javascript:;" class="fl" title="微星官方京东旗舰店">微星官方京东旗舰店</a>&nbsp;&nbsp;
+                    <a href="javascript:;" class="fl" title="微星游戏主机旗舰店">微星游戏主机旗舰店</a>&nbsp;&nbsp;
+                    <a href="javascript:;" class="fl" title="笔电授权天猫店">笔电授权天猫店</a>&nbsp;&nbsp;
+                    <a href="javascript:;" class="fl" title="微星天猫旗舰店">微星天猫旗舰店</a>&nbsp;&nbsp;
+                    <a href="javascript:;" class="fl" title="微星显卡天猫专卖店">微星显卡天猫专卖店</a>&nbsp;&nbsp;
+                </div>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle btn collapsed" data-toggle="collapse" data-target="#navbar-nav-collapse" aria-expanded="false"
+                        title="Toggle navigation">
+                        <span class="msicomicon msicomicon-nav-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                        </span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:;">
+                        <img src="https://cn.msi.com/images/msiLogo_2017_cn.png" alt="MSI®">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-btn-group">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown user user-menu">
+                            <a class="dropdown-toggle btn btn-account login" data-toggle="dropdown" href="#" title="MSI Account">
+                                <span class="msicomicon msicomicon-user"></span>
+                                <span class="sr-only">Account</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="https://cn.msi.com/images/msi_thumb.png" class="img-circle" alt="User Image">
+                                    <p>
+                                        <!-- <small>Member since Nov. 2012</small> -->
+                                    </p>
+                                </li>
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="javascript:;" target="_blank" class="btn btn-default btn-info">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="https://cn.msi.com/homepage/logout" class="btn btn-default btn-info">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="btn btn-search" title="Search" data-toggle="collapse" data-target="#navbar-search-collapse" aria-expanded="false"
+                                aria-controls="navbar-search-collapse">
+                                <span class="msicomicon msicomicon-search"></span>
+                                <span class="sr-only">Search</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="collapse width" id="navbar-search-collapse">
+                        <form class="navbar-form">
+                            <button type="submit" class="btn btn-search" id="header_search_btn" title="Search">
+                                <span class="msicomicon msicomicon-search"></span>
+                                <span class="sr-only">Submit</span>
+                            </button>
+                            <div class="form-group">
+                                <label class="sr-only" for="header_search_text">Searchterms</label>
+                                <input class="form-control" id="header_search_text" type="text" placeholder="Search msi.com">
+                            </div>
+                            <button type="reset" class="btn btn-close" title="Close" data-toggle="collapse" data-target="#navbar-search-collapse" aria-expanded="false"
+                                aria-controls="navbar-search-collapse">
+                                <span class="msicomicon msicomicon-close"></span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-nav-collapse">
+                    <ul class="nav navbar-nav topnav">
+                        <!--MSI VR-->
+                        <!--Products-->
+                        <li class="nav-item-products dropdown dropdown-mega">
+                            <a href="javascript:;" class="dropdown-toggle topnavitem" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                产品资讯 </a>
+                            <div class="dropdown-menu dropdown-fullwidth">
+                                <div class="container-fluid">
+                                    <div class="row" style="background-color:#f00;">
+                                        <div class="col-xs-12">
+                                            <div class="nav-subtitle">Gaming
+                                                <span class="\&quot;hidden-xs\&quot;"> &amp; Consumer</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all Gaming Series Laptops">
+                                                <div class="nav-products-image">
+                                                    <img src="https://cn.msi.com/images/product_nav/laptop.png" alt="Gaming Series Laptops">
+                                                </div>
+                                                <span class="nav-title nav-title-main-product">笔记本电脑</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GT 系列">
+                                                        GT 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GS 系列">
+                                                        GS 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GE 系列">
+                                                        GE 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GP 系列">
+                                                        GP 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GL 系列">
+                                                        GL 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GF Series">
+                                                        GF Series </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GV Series">
+                                                        GV Series </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all Gaming Series Desktops">
+                                                <div class="nav-products-image">
+                                                    <img src="https://cn.msi.com/images/product_nav/desktop.png" alt="Gaming Series Desktops">
+                                                </div>
+                                                <span class="nav-title nav-title-main-product">桌面电脑</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Vortex 系列">
+                                                        Vortex 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Aegis 系列">
+                                                        Aegis 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Nightblade 系列">
+                                                        Nightblade 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Infinite 系列">
+                                                        Infinite 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Trident 系列">
+                                                        Trident 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Codex 系列">
+                                                        Codex 系列 </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all Gaming Series All-in-One PCS">
+                                                <div class="nav-products-image">
+                                                    <img src="https://cn.msi.com/images/product_nav/aio.png" alt="Gaming Series All-in-One PCS">
+                                                </div>
+                                                <span class="nav-title nav-title-main-product">一体机</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GAMING Series">
+                                                        GAMING Series </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="https://cn.msi.com/Motherboards/" title="View all Gaming Series Motherboards">
+                                                <div class="nav-products-image">
+                                                    <img src="https://cn.msi.com/images/product_nav/mb.png" alt="Gaming Series Motherboards">
+                                                </div>
+                                                <span class="nav-title nav-title-main-product">主板</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 游戏荣耀系列">
+                                                        游戏荣耀系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 游戏疾速系列">
+                                                        游戏疾速系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 游戏军火库系列">
+                                                        游戏军火库系列 </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all Gaming Series Graphics Cards">
+                                                <div class="nav-products-image">
+                                                    <img src="https://cn.msi.com/images/product_nav/vga.png" alt="Gaming Series Graphics Cards">
+                                                </div>
+                                                <span class="nav-title nav-title-main-product">显卡</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GAMING 系列">
+                                                        GAMING 系列 </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all Gaming Series Accessories">
+                                                <div class="nav-products-image">
+                                                    <img src="https://cn.msi.com/images/product_nav/accessories.png" alt="Gaming Series Accessories">
+                                                </div>
+                                                <span class="nav-title nav-title-main-product">外设周边</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 键盘">
+                                                        键盘 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 鼠标">
+                                                        鼠标 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 耳机">
+                                                        耳机 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 鼠标垫">
+                                                        鼠标垫 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;">
+                                                        Controller </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="https://cn.msi.com/Backpacks/" title="View all Gaming Series VR Backpack PC">
+                                                <div class="nav-products-image">
+                                                    <img src="https://cn.msi.com/images/product_nav/vrone.png" alt="Gaming Series VR Backpack PC">
+                                                </div>
+                                                <span class="nav-title nav-title-main-product">背包式主机</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View VR ONE">
+                                                        VR ONE </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="background-color:#222;">
+                                        <div class="col-xs-12">
+                                            <div class="nav-subtitle">Professional
+                                                <span class="\&quot;hidden-xs\&quot;"> &amp; Workstation</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="https://cn.msi.com/Laptops/" title="View all 笔记本电脑">
+                                                <span class="nav-title nav-title-main-product">笔记本电脑</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View P系列">
+                                                        P系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View G系列">
+                                                        G系列 </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all 行动绘图工作站系列">
+                                                <span class="nav-title nav-title-main-product">行动绘图工作站系列</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View WT73VR">
+                                                        WT73VR </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View WS63">
+                                                        WS63 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View WE series">
+                                                        WE series </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all 主板">
+                                                <span class="nav-title nav-title-main-product">主板</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Pro 商用系列">
+                                                        Pro 商用系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Cooler">
+                                                        Cooler </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all 显卡">
+                                                <span class="nav-title nav-title-main-product">显卡</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View NVIDIA 系列">
+                                                        NVIDIA 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View AMD 系列">
+                                                        AMD 系列 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 信仰配件">
+                                                        信仰配件 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;">
+                                                        AERO ITX Series </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all 准系统">
+                                                <span class="nav-title nav-title-main-product">准系统</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Pro 系列">
+                                                        Pro 系列 </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-navbar">
+                                            <a href="javascript:;" title="View all 平板电脑">
+                                                <span class="nav-title nav-title-main-product">平板电脑</span>
+                                            </a>
+                                            <ul class="nav visible-md visible-lg">
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Android 系统">
+                                                        Android 系统 </a>
+                                                </li>
+                                                <li>
+                                                    <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Windows 系统">
+                                                        Windows 系统 </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="background-color:#414141;">
+                                        <div class="col-xs-12">
+                                            <div class="nav-subtitle">Business
+                                                <span class="\&quot;hidden-xs\&quot;">-to-Business</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-1-7">
+                                            <a href="javascript:;" class="nav-item-" title="View all 服务器 products" target="_self">
+                                                <span class="nav-title">服务器</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-1-7">
+                                            <a href="javascript:;" class="nav-item-" title="View all 工控计算机 products" target="_self">
+                                                <span class="nav-title">工控计算机</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-1-7">
+                                            <a href="javascript:;" class="nav-item-" title="View all CE products" target="_self">
+                                                <span class="nav-title">CE</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <!--Community-->
+    
+                        <li class="nav-item-community dropdown dropdown-mega">
+                            <a href="javascript:;" class="dropdown-toggle topnavitem" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                社群媒体
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-fullwidth">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3">
+                                            <a href="javascript:;" class="nav-item-icon" title="" target="_self">
+                                                <span class="msicomicon msicomicon-socialmedia"></span>
+                                                <span class="nav-title">新闻</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <a href="javascript:;" class="nav-item-icon" title="" target="_self">
+                                                <span class="msicomicon msicomicon-video"></span>
+                                                <span class="nav-title">影音中心</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <a href="javascript:;" class="nav-item-icon" title="" target="_self">
+                                                <span class="msicomicon msicomicon-forum"></span>
+                                                <span class="nav-title">微星论坛</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <a href="javascript:;" class="nav-item-icon" title="" target="_self">
+                                                <span class="msicomicon msicomicon-gamingteams"></span>
+                                                <span class="nav-title">GAMING TEAMS</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="nav-item-featured dropdown dropdown-mega">
+                            <a href="javascript:;" class="dropdown-toggle topnavitem" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                电竞魂 </a>
+                            <div class="dropdown-menu dropdown-fullwidth">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-8">
+                                            <div class="row landing_row_main" style="">
+                                                <div class="col-xs-12" style="padding-right: 35px;">
+                                                    <a class="nav-item-icon" href="javascript:;" title="View all featured">
+                                                        <span class="msicomicon msicomicon-fire"></span>
+                                                        <span class="nav-title pull-left">Showcase Arena</span>
+                                                        <span class="nav-viewall pull-right">View all</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row hidden-xs landing_row_main">
+                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+                                                    <div class="nav-item-jumbotron" style="width: 99%;">
+                                                        <a href="javascript:;" title="View 2017 玩家专属圣诞送礼指南 #DearGamerSanta│MSI">
+                                                            <div class="nav-item-jumbotron-text" style="margin-bottom: 10px;">
+                                                                <span class="nav-title">2017 玩家专属圣诞送礼指南 #DearGamerSanta│MSI</span>
+                                                            </div>
+                                                            <div class="nav-item-jumbotron-image">
+                                                                <img src="http://cn.msi.com/asset/global/picture/promotion/promotion_15123828445a25217c76a4c.jpg" title="2017 玩家专属圣诞送礼指南 #DearGamerSanta│MSI"
+                                                                    alt="">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+                                                    <div class="row landing_row2">
+                                                        <div class="col-xs-6 col-md-6 col-lg-4 ">
+                                                            <div class="nav-item-jumbotron">
+                                                                <a href="javascript:;" title="View 玩家圣诞快乐：参加 #DearGamerSanta 活动送圣诞好礼│MSI">
+                                                                    <div class="nav-item-jumbotron-text">
+                                                                        <span class="nav-title">玩家圣诞快乐：参加 #DearGamerSanta 活动送圣诞好礼│MSI</span>
+                                                                    </div>
+                                                                    <div class="nav-item-jumbotron-image">
+                                                                        <img src="http://cn.msi.com/asset/global/picture/promotion/promotion_15121190025a211adad860a.jpg" title="玩家圣诞快乐：参加 #DearGamerSanta 活动送圣诞好礼│MSI"
+                                                                            alt="">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6 col-md-6 col-lg-4 ">
+                                                            <div class="nav-item-jumbotron">
+                                                                <a href="javascript:;" title="View 打造4K视频编辑电脑">
+                                                                    <div class="nav-item-jumbotron-text">
+                                                                        <span class="nav-title">打造4K视频编辑电脑</span>
+                                                                    </div>
+                                                                    <div class="nav-item-jumbotron-image">
+                                                                        <img src="http://cn.msi.com/asset/global/picture/promotion/promotion_15100407975a0164dd72342.jpg" title="打造4K视频编辑电脑" alt="">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6 col-md-6 col-lg-4 ">
+                                                            <div class="nav-item-jumbotron">
+                                                                <a href="javascript:;" title="View 微星主板支持英特尔傲腾內存 - 基情加速度 | 微星科技">
+                                                                    <div class="nav-item-jumbotron-text">
+                                                                        <span class="nav-title">微星主板支持英特尔傲腾內存 - 基情加速度 | 微星科技</span>
+                                                                    </div>
+                                                                    <div class="nav-item-jumbotron-image">
+                                                                        <img src="http://cn.msi.com/asset/cn/picture/promotion/promotion_150571923159bf73bf4a3ce.jpg" title="微星主板支持英特尔傲腾內存 - 基情加速度 | 微星科技"
+                                                                            alt="">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6 col-md-6 col-lg-4 ">
+                                                            <div class="nav-item-jumbotron">
+                                                                <a href="javascript:;" title="View 初学者必备: 如何组装计算机完整教学攻略 #YesWeBuild | MSI">
+                                                                    <div class="nav-item-jumbotron-text">
+                                                                        <span class="nav-title">初学者必备: 如何组装计算机完整教学攻略 #YesWeBuild | MSI</span>
+                                                                    </div>
+                                                                    <div class="nav-item-jumbotron-image">
+                                                                        <img src="http://cn.msi.com/asset/cn/picture/promotion/promotion_150571929159bf73fb0276a.jpg" title="初学者必备: 如何组装计算机完整教学攻略 #YesWeBuild | MSI"
+                                                                            alt="">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6 col-md-6 col-lg-4 visible-lg">
+                                                            <div class="nav-item-jumbotron">
+                                                                <a href="javascript:;" title="View 电脑安装技术大讲堂">
+                                                                    <div class="nav-item-jumbotron-text">
+                                                                        <span class="nav-title">电脑安装技术大讲堂</span>
+                                                                    </div>
+                                                                    <div class="nav-item-jumbotron-image">
+                                                                        <img src="http://cn.msi.com/asset/global/picture/promotion/promotion_14860220055892e57585916.jpg" title="电脑安装技术大讲堂" alt="">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="row" style="padding-right: 20px;">
+                                                <div class="col-xs-12">
+                                                    <a class="nav-item-icon" href="https://cn.msi.com/blogs/" title="View all featured">
+                                                        <span class="msicomicon msicomicon-blog"></span>
+                                                        <span class="nav-title pull-left">Blog articles</span>
+                                                        <span class="nav-viewall pull-right">View all</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row hidden-xs">
+                                                <ul class="nav col-xs-12 col-md-12">
+                                                    <li class="">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 拥有出色的电竞设计与性能 – 微星 GE63VR 7RF RAIDER新版评测">
+                                                            拥有出色的电竞设计与性能 – 微星 GE63VR 7RF RAIDER... </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;">
+                                                            顶级大作完美运行，激情吃鸡你值得拥有的微星GL62M </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View MSI MEMORY TRY IT 让你吃鸡更顺畅!? MSI Z370 GAMING PLUS + PUBG实测">
+                                                            MSI MEMORY TRY IT 让你吃鸡更顺畅!? MSI Z370 GAMING PLUS + PUBG... </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View Z370 GODLIKE GAMING 主板介绍 - 超频首选">
+                                                            Z370 GODLIKE GAMING 主板介绍 - 超频首选 </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 全新Core i7-8700K六核处理器上佳伙伴 – Z370 GAMING 系列主板选购指南">
+                                                            全新Core i7-8700K六核处理器上佳伙伴 – Z370 GAMING... </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 2017DreamHack Winter落下帷幕 微星游戏本携众多新品参加展会">
+                                                            2017DreamHack Winter... </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GP62MVR 7RF性能超出GTX1060 Max-Q游戏本21%！">
+                                                            GP62MVR 7RF性能超出GTX1060 Max-Q游戏本21%！ </a>
+                                                    </li>
+                                                    <li class="visible-lg">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GE63VR 7RF（GTX 1070）比GTX 1080 Max-Q游戏本更强悍！">
+                                                            GE63VR 7RF（GTX 1070）比GTX 1080 Max-Q游戏本更强悍！ </a>
+                                                    </li>
+                                                    <li class="visible-lg">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View GS43VR 游戏体验">
+                                                            GS43VR 游戏体验 </a>
+                                                    </li>
+                                                    <li class="visible-lg">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View wNv绝地求生亚洲邀请赛战报">
+                                                            wNv绝地求生亚洲邀请赛战报 </a>
+                                                    </li>
+                                                    <li class="visible-lg">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 搭载GTX 1070 Max-Q的最酷超轻薄游戏笔记型电脑GS63VR 7RG Stealth Pro">
+                                                            搭载GTX 1070 Max-Q的最酷超轻薄游戏笔记型电脑GS63VR 7RG ... </a>
+                                                    </li>
+                                                    <li class="visible-lg">
+                                                        <a class="msicomicon msicomicon-nav-bullet" href="javascript:;" title="View 深入浅出微星电竞笔电七大系列">
+                                                            深入浅出微星电竞笔电七大系列 </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="topnavitem">技术支持 </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+<div class="banner_wide">
+    <div class="bx-wrapper" style="max-width: 100%;">
+        
+            <ul class="banner_list bxslider" style="width: 715%; position: relative; transition-duration: 1s; transform: translate3d(-5008px, 0px, 0px);">
+                <!-- <li style="float: left; list-style: none; position: relative; width: 1252px;" class="bx-clone">
+                    <a class="main_banner"
+                        href="javascript:;" style="width: 100%;height: 100%;display: block;"
+                        title="双十活动">
+                        <img src="http://cn.msi.com/asset/cn/picture/banner/banner_15105419485a090a7cd3453.jpg" alt="双十活动" class="img-responsive">
+                    </a>
+                </li> -->
+                <li style="float: left; list-style: none; position: relative; width: 1252px;">
+                    <a class="main_banner"
+                        href="javascript:;" style="width: 100%;height: 100%;display: block;" title="胜券在握">
+                        <img src="http://cn.msi.com/asset/cn/picture/banner/banner_15124416555a260737c4673.jpg" alt="胜券在握" class="img-responsive">
+                    </a>
+                </li>
+                <li style="float: left; list-style: none; position: relative; width: 1252px;">
+                    <a class="main_banner" 
+                        href="javascript:;"
+                        style="width: 100%;height: 100%;display: block;" title="双旦礼遇">
+                        <img src="http://cn.msi.com/asset/cn/picture/banner/banner_15136550115a388ae352726.jpg" alt="双旦礼遇" class="img-responsive">
+                    </a>
+                </li>
+                <li style="float: left; list-style: none; position: relative; width: 1252px;">
+                    <a class="main_banner"
+                        href="javascript:;" style="width: 100%;height: 100%;display: block;" title="GE63">
+                        <img src="http://cn.msi.com/asset/cn/picture/banner/banner_15130715035a2fa38f845fc.jpg" alt="GE63" class="img-responsive">
+                    </a>
+                </li>
+                <li style="float: left; list-style: none; position: relative; width: 1252px;">
+                    <a class="main_banner"
+                        href="javascript:;" style="width: 100%;height: 100%;display: block;"
+                        title="万元直降">
+                        <img src="http://cn.msi.com/asset/cn/picture/banner/banner_15131335065a3095c26af45.jpg" alt="万元直降" class="img-responsive">
+                    </a>
+                </li>
+                <li style="float: left; list-style: none; position: relative; width: 1252px;">
+                    <a class="main_banner"
+                        href="javascript:;" style="width: 100%;height: 100%;display: block;"
+                        title="双十活动">
+                        <img src="http://cn.msi.com/asset/cn/picture/banner/banner_15105419485a090a7cd3453.jpg" alt="双十活动" class="img-responsive">
+                    </a>
+                </li>
+                <!-- <li style="float: left; list-style: none; position: relative; width: 1252px;" class="bx-clone">
+                    <a class="main_banner"
+                        href="javascript:;" style="width: 100%;height: 100%;display: block;" title="胜券在握">
+                        <img src="http://cn.msi.com/asset/cn/picture/banner/banner_15124416555a260737c4673.jpg" alt="胜券在握" class="img-responsive">
+                    </a>
+                </li> -->
+            </ul>
+       
+    </div>
+</div>
+
+<!-- container-fluid -->
+<div class="container-fluid">
+    <div class="page-container page-container-product-home">
+        <div style="position:absolute; top:25px; right:0px; z-index: 2;">
+        </div>
+        <a href="javascript:;">
+            <h1>笔记本电脑</h1>
+        </a>
+
+        <div id="sidebox" class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+            <div class="advanced_search">
+                <div id="advanced_search_title">
+                    <h2>高级搜索</h2>
+                </div>
+                <div id="advanced_search_div">
+                    <h2 class="reset-filter">
+                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                        Reset Filter </h2>
+                    <h3 class="dropdown pointer arrow-right">
+                        Gaming Series </h3>
+                    <ul style="display: none;">
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="Powerhouse. Extreme Performance.">
+                                    <input type="checkbox" class="filter-checkbox" value="643" data-id="643" data-title="GT-%E7%B3%BB%E5%88%97">GT 系列 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="Slim. Fast. Charming." class="">
+                                    <input type="checkbox" class="filter-checkbox" value="644" data-id="644" data-title="GS-%E7%B3%BB%E5%88%97">GS 系列 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="Enthusiastic. Power. Tough." class="">
+                                    <input type="checkbox" class="filter-checkbox" value="645" data-id="645" data-title="GE-%E7%B3%BB%E5%88%97">GE 系列 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="Performance. Speed. Cool." class="">
+                                    <input type="checkbox" class="filter-checkbox" value="646" data-id="646" data-title="GP-%E7%B3%BB%E5%88%97">GP 系列 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="Mainstream. Capacity. Reliability." class="">
+                                    <input type="checkbox" class="filter-checkbox" value="647" data-id="647" data-title="GL-%E7%B3%BB%E5%88%97">GL 系列 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="Performance. Speed. Cool." class="">
+                                    <input type="checkbox" class="filter-checkbox" value="2015" data-id="2015" data-title="GF-Series">GF Series </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="Mainstream. Capacity. Reliability." class="">
+                                    <input type="checkbox" class="filter-checkbox" value="2014" data-id="2014" data-title="GV-Series">GV Series </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="1838" data-id="1838" data-title="Camo-Squad-Limited-Edition">Camo Squad Limited Edition </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="648" data-id="648" data-title="%E9%A3%8E%E6%9A%B4%E8%8B%B1%E9%9B%84%E7%89%B9%E9%A5%B0%E7%89%88">风暴英雄特饰版 </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="dropdown pointer arrow-right">
+                        Prestige Series </h3>
+                    <ul style="display: none;">
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="1790" data-id="1790" data-title="PL-Series" disabled="disabled">PL Series </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="652" data-id="652" data-title="PE-%E7%B3%BB%E5%88%97" disabled="disabled">PE 系列 </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="dropdown arrow-right pointer">
+                        Virtual Reality (VR) </h3>
+                    <ul style="display:none;">
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                                    <input type="checkbox" class="filter-checkbox" value="642" data-id="642" data-title="VR%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%B3%BB%E5%88%97">VR笔记本系列 </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="dropdown arrow-right pointer">
+                        CPU SKU </h3>
+                    <ul style="display:none;">
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                                    <input type="checkbox" class="filter-checkbox" value="655" data-id="655" data-title="%E8%8B%B1%E7%89%B9%E5%B0%94%E7%AC%AC%E5%85%AD%E4%BB%A3">英特尔第六代 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                                    <input type="checkbox" class="filter-checkbox" value="674" data-id="674" data-title="%E8%8B%B1%E7%89%B9%E5%B0%94%E7%AC%AC%E5%9B%9B%E4%BB%A3">英特尔第四代 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="1770" data-id="1770" data-title="%E8%8B%B1%E7%89%B9%E5%B0%94%E7%AC%AC%E4%B8%83%E4%BB%A3">英特尔第七代 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="656" data-id="656" data-title="%E8%8B%B1%E7%89%B9%E5%B0%94%E7%AC%AC%E4%BA%94%E4%BB%A3">英特尔第五代 </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="dropdown arrow-right pointer">
+                        GPU SKU </h3>
+                    <ul style="display:none;">
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="878" data-id="878" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-1080-SLI">GeForce
+                                    <sup>®</sup> GTX 1080 SLI </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="880" data-id="880" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-1070-SLI">GeForce
+                                    <sup>®</sup> GTX 1070 SLI </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="879" data-id="879" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-1080">GeForce
+                                    <sup>®</sup> GTX 1080 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                                    <input type="checkbox" class="filter-checkbox" value="881" data-id="881" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-1070">GeForce
+                                    <sup>®</sup> GTX 1070 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                                    <input type="checkbox" class="filter-checkbox" value="882" data-id="882" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-1060">GeForce
+                                    <sup>®</sup> GTX 1060 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="1780" data-id="1780" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-1050-Ti"
+                                        disabled="disabled">GeForce
+                                    <sup>®</sup> GTX 1050 Ti </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="1779" data-id="1779" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-1050"
+                                        disabled="disabled">GeForce
+                                    <sup>®</sup> GTX 1050 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="657" data-id="657" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-980-SLI">GeForce
+                                    <sup>®</sup> GTX 980 SLI </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="658" data-id="658" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-980">GeForce
+                                    <sup>®</sup> GTX 980 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="659" data-id="659" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-980M-SLI">GeForce
+                                    <sup>®</sup> GTX 980M SLI </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="660" data-id="660" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-980M">GeForce
+                                    <sup>®</sup> GTX 980M </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="678" data-id="678" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-880M">GeForce
+                                    <sup>®</sup> GTX 880M </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="661" data-id="661" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-970M-SLI">GeForce
+                                    <sup>®</sup> GTX 970M SLI </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                                    <input type="checkbox" class="filter-checkbox" value="662" data-id="662" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-970M">GeForce
+                                    <sup>®</sup> GTX 970M </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="677" data-id="677" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-870M">GeForce
+                                    <sup>®</sup> GTX 870M </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="673" data-id="673" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-965M-SLI">GeForce
+                                    <sup>®</sup> GTX 965M SLI </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="663" data-id="663" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-965M"
+                                        disabled="disabled">GeForce
+                                    <sup>®</sup> GTX 965M </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="664" data-id="664" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-960M"
+                                        disabled="disabled">GeForce
+                                    <sup>®</sup> GTX 960M </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="676" data-id="676" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-860M"
+                                        disabled="disabled">GeForce
+                                    <sup>®</sup> GTX 860M </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="665" data-id="665" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-950M"
+                                        disabled="disabled">GeForce
+                                    <sup>®</sup> GTX 950M </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="675" data-id="675" data-title="GeForce%3Csup%3E%26reg%3B%3C%2Fsup%3E-GTX-850M"
+                                        disabled="disabled">GeForce
+                                    <sup>®</sup> GTX 850M </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="dropdown pointer arrow-right">
+                        Panel Size </h3>
+                    <ul style="display: none;">
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="disabled">
+                                    <input type="checkbox" class="filter-checkbox" value="667" data-id="667" data-title="14%22-%E5%8F%8A%E4%BB%A5%E4%B8%8B%E7%B3%BB%E5%88%97"
+                                        disabled="disabled">14" 及以下系列 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                                    <input type="checkbox" class="filter-checkbox" value="668" data-id="668" data-title="15.6%22-%E7%B3%BB%E5%88%97">15.6" 系列 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="">
+                                    <input type="checkbox" class="filter-checkbox" value="669" data-id="669" data-title="15.6%22-4K">15.6" 4K </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="670" data-id="670" data-title="17%22-%E7%B3%BB%E5%88%97">17" 系列 </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="671" data-id="671" data-title="17%22-4K">17" 4K </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="1757" data-id="1757" data-title="17%22-120Hz">17" 120Hz </label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="checkbox">
+                                <label data-toggle="tooltip" data-placement="right" title="" data-original-title="" class="">
+                                    <input type="checkbox" class="filter-checkbox" value="672" data-id="672" data-title="18%22-%E7%B3%BB%E5%88%97">18" 系列 </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          
+            <div class="graybox mt20">
+                <a href="javascript:;">
+                    <div class="side_wslink" style=" background: url(../img/weibo.png) 50px 10px no-repeat;">新浪微博</div>
+                </a>
+                <a href="javascript:;">
+                    <div class="side_wslink" style=" background: url(../img/youku.png) 50px 10px no-repeat;">优酷视频</div>
+                </a>
+                
+            </div>
+            <div class="side_spotlight pt30 hidden-xs">
+                <h2>热点</h2>
+                <div class="spotlightbox">
+                    <a href="javascript:;">
+                        <img src="http://cn.msi.com/asset/cn/picture/spotlight/spotlight_20140220170143.jpg" alt="SSE" class="img-responsive">
+                    </a>
+                </div>
+                <div class="spotlightbox">
+                    <a href="javascript:;">
+                        <img src="http://cn.msi.com/asset/cn/picture/spotlight/spotlight_20150203151400.jpg" alt="笔电微信二维码" class="img-responsive">
+                    </a>
+                </div>
+                <div class="spotlightbox">
+                    <a href="javascript:;">
+                        <img src="http://cn.msi.com/asset/cn/picture/spotlight/spotlight_20140220170112.jpg" alt="Gamecaster "
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div class="spotlightbox">
+                    <a href="javascript:;">
+                        <img src="http://cn.msi.com/asset/cn/picture/spotlight/spotlight_20140327093458.jpg" alt="brush" class="img-responsive">
+                    </a>
+                </div>
+                <div class="spotlightbox">
+                    <a href="javascript:;">
+                        <img src="http://cn.msi.com/asset/cn/picture/spotlight/spotlight_20140220170022.jpg" alt="Miracast  "
+                            class="img-responsive">
+                    </a>
+                </div>
+                <div class="spotlightbox">
+                    <a href="javascript:;">
+                        <img src="http://cn.msi.com/asset/cn/picture/spotlight/spotlight_20140220165753.jpg" alt="Wide" class="img-responsive">
+                    </a>
+                </div>
+                <div class="spotlightbox">
+                    <a href="javascript:;">
+                        <img src="http://cn.msi.com/asset/cn/picture/spotlight/spotlight_15131335685a309600cc3b6.jpg" alt="万元直降"
+                            class="img-responsive">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="mainbox" class="col-lg-10 col-md-9 col-sm-9 col-xs-12" style="display: none;">
+            <div class="nb_latestnewsbox">
+                <div class="mb20">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nb_banner330">
+                        <div>
+                            <a href="javascript:;">
+                                <img alt="" src="../img/161209a.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            &nbsp;</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nb_banner330">
+                        <a href="javascript:;">
+                            <img alt="" src="../img/161209b.jpg">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nb_banner330">
+                        <a href="javascript:;" style="font-size: 12px;">
+                            <img class="img-responsive" src="http://asset.msi.com/global/picture/hfb/1_dragoon1.jpg">
+                        </a>
+                    </div>
+                    <div class="clear">
+                        &nbsp;</div>
+                </div>
+                <div class="pb15">
+                    <div class="col-md-4 col-sm-4 col-xs-12 otherlink">
+                        <div class="graybox">
+                            <div class="icon_ocss">
+                                &nbsp;</div>
+                            <h2>
+                                <a href="javascript:;">产品注册</a>
+                            </h2>
+                            <p>
+                                <a href="javascript:;">微星会员独享权益（包括延保）</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 otherlink">
+                        <div class="graybox">
+                            <div class="icon_comparison">
+                                &nbsp;</div>
+                            <h2>
+                                <a href="javascript:;">产品推荐</a>
+                            </h2>
+                            <p>
+                                <a href="javascript:;">想要知道微星笔电热销产品就看这</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 otherlink">
+                        <div class="graybox">
+                            <div class="icon_awards">
+                                &nbsp;</div>
+                            <h2>
+                                <a href="javascript:;">得奖荣耀</a>
+                            </h2>
+                            <p>
+                                <a href="javascript:;">微星产品的光荣记录</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear">
+                        &nbsp;</div>
+                </div>
+                <p>
+                    &nbsp;</p>
+                <h2>最新新闻</h2>
+
+                <div class="row">
+                    <a href="javascript:;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 news_list">
+                            <div class="news_body">
+                                <div class="col-lg-4 col-md-4 col-sm-5 hidden-xs newsphoto">
+                                    <img src="http://cn.msi.com/asset/resize/picture/cn/news-s/news_15138442735a3b6e31496c9-jpg/405.jpg"
+                                        class="img-responsive">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 newstxt">
+                                    <h3>GP62MVR 7RF 搭配 NVIDIA GTX 1060显卡 和Omen 15 with GTX1060 Max-Q!相比性能超出21%！</h3>
+
+                                    <p>
+
+                                        许多微星的发烧友和用户们都知道微星游戏笔记本始终在散热上下足功夫。这次我想来测试GP62MVR搭载GTX 1060 3GB GDDR5显存（大陆为6GB）的笔记本与其他品牌的搭载GTX 1060 Max-Q 6GB显存的产品进行比较。来看看搭载3GB显存显卡的GP62MVR与Max-Q设计、6GB显存的其他产品性能差距究竟有多大？
+                                        搭载 GTX1060显卡的 GP62MVR&nbsp; 拥有更好的散热设计 当我把GP62MVR拿在手上，我感觉它的外观要比GE62还要薄。因为GP62M模具移除了经典的光驱设计从而使高度和厚度相比之前都有减少。GP62MVR所使用的是Cooler
+                                        Boost4散热系统，它拥有双风扇六铜管的配置。微星游戏本始终在同级别产品中争取做到最好。 GP62MVR的双风扇六铜管散热配置 其他品牌产品仅有3铜管 由此可见，GP62MVR在散热方面用料是实打实的，其他品牌的产品是GTX
+                                        1060 Max-... More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 news_list">
+                            <div class="news_body">
+                                <div class="col-lg-4 col-md-4 col-sm-5 hidden-xs newsphoto">
+                                    <img src="http://cn.msi.com/asset/resize/picture/cn/news-s/news_15137500575a39fe296c432-jpg/405.jpg"
+                                        class="img-responsive">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 newstxt">
+                                    <h3>性能和价格都可兼得?微星GL62VR新品评测（转自太平洋网）</h3>
+
+                                    <p>【PConline 单机评测】现如今，很多游戏都是注重更清晰的画面和更细腻的特效，也加快了计算机硬件更新换代的周期，这使游戏本的市场竞争变得如火如荼。一些高性能游戏本动辄就上万块，很多资深玩家为了追求完美的游戏体验，不惜花重金入手这些土豪配置，当然这只是少数人的选择。大多数游戏爱好者却还是在性能和价格之间左右不定、艰难抉择，今天笔者就给大家推荐一款性价比还不错的游戏笔记本——微星GL62VR-7RFX。这个机型根据处理器、显卡、内存的不同配置，价格在5500元到8500元之间，比目前市场上的主流高端游戏本便宜了不少。今天为大家介绍的机型配备的是Intel
+                                        Core i5-7300HQ的处理器和GTX 1060的显卡。 　　一、低调炫酷的外观设计： 　　首先映入眼帘的是微星GL62VR的A面。这台微星的A面显得比较低调。中间除了微星最具识别性的logo，没有过多娇柔造作的装饰，在告诉用户这是一台注重性能的游戏本。A面采用传统的黑色磨砂工艺喷漆，手感很光滑...
+                                        More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 news_list">
+                            <div class="news_body">
+                                <div class="col-lg-4 col-md-4 col-sm-5 hidden-xs newsphoto">
+                                    <img src="http://cn.msi.com/asset/resize/picture/cn/news-s/news_15130479175a2f476daf76e-jpg/405.jpg"
+                                        class="img-responsive">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 newstxt">
+                                    <h3>拥有出色的电竞设计与效能 – MSI GE63VR 7RF RAIDER新版解析</h3>
+
+                                    <p>拥有出色的电竞设计与性能 – 微星 GE63VR 7RF RAIDER新版评测 近几年微星在中高阶游戏本市场几乎都是以三种系列为主打 第一种就是追求发烧性能的GT系列，第二种为轻薄但也有中高性能的GS系列
+                                        第三种就是介于两者之间的GE系列，重量比GT还轻且性能比GS要高 算是介于两者之间的均衡设计，最近GE系列已经改版，外观、设计与用料再进化 本篇主要对最新改款的微星
+                                        GE63VR 15.6寸做许多方面的测试与分析 首先看到A面上盖，依然采用微星惯用的铝质金属搭配发丝纹路的设计 微星的龙形Logo在开机时图案会发出白色淡光来增加质感
+                                        GE63由GPU分为GTX 1060 7RE与更高阶GTX 1070为主的7RF两款 体积为383 x 260 x 27.5 mm，重量依内部硬件配配置不同而略微有些差异
+                                        7RF原厂规格为2.39公斤，实际量起来也约2395公克，误差值非常小 中央区域左右两边有突起的折线，搭配两条红色线条... More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 news_list">
+                            <div class="news_body">
+                                <div class="col-lg-4 col-md-4 col-sm-5 hidden-xs newsphoto">
+                                    <img src="http://cn.msi.com/asset/resize/picture/cn/news-s/news_15127181635a2a3f53815eb-png/405.jpg"
+                                        class="img-responsive">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 newstxt">
+                                    <h3>顶级大作完美运行，激情吃鸡你值得拥有的微星GL62M</h3>
+
+                                    <p>作为电脑设备知名品牌MSI微星近日推出了一款专为电竞游戏打造的笔记本电脑微星GL62M 7REX-1252CN，一经推出便得到游戏玩家们的广泛关注，无论是从外观设计还是配置参数都能够看到这款产品是面向主流用户的一款全能高性价比机型。那么这款笔记本电脑到底是因为什么让它具有非常之高的口碑和人气呢？下面我就来一一分析看看。
+                                        首先自不必说，军工品质大厂微星MSI出品，必然是做工精良，质量上有着绝对的保证，外观更是端庄大气，绝对是拿的出手的笔记本电脑。 微星GL62M7REX-1252CN专为游戏打造，所以在外观的设计上更加照顾长时间游戏的玩家，对“散热”是做足了功课，多方位的散热出口，即使玩很长时间的游戏也不用担心会出现笔记本温度急剧升高，导致机器内部硬件过热的情况出现。
+                                        除此之外，本款笔记本电脑还专门设计了一键强冷按钮，强效保证机器一直处在正常的温度内。 很多人担心这样的设计容易积灰，不用担心，笔记本不怕吃多少灰... More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 news_list">
+                            <div class="news_body">
+                                <div class="col-lg-4 col-md-4 col-sm-5 hidden-xs newsphoto">
+                                    <img src="http://cn.msi.com/asset/resize/picture/cn/news-s/news_15124572935a26444d3d20c-jpg/405.jpg"
+                                        class="img-responsive">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 newstxt">
+                                    <h3>2017DreamHack Winter落下帷幕 微星游戏本携众多新品参加展会</h3>
+
+                                    <p>就在上周，全球最大的“局域网聚会（LAN party）” DreamHack Winter于上周在瑞典落下了帷幕，共有超过25000位电脑游戏爱好者齐聚一堂，一起分享游戏、音乐，一起竞技。
+                                        虽然现在的DreamHack是一个包含了几乎所有主流游戏的全球电竞赛事，但它的起始却只是瑞典一些电脑爱好者和当地学生的一个小型电脑聚会而已。在1994年的时候瑞典马隆市的几个小伙伴租用了学校的自助餐厅搞了一个线下游戏聚会活动，他们给这个活动命名为“DreamHack”。当年这个活动吸引了40个人参加，两年后参与活动的人数增长到了120人。在1997年他们将活动场地搬到了博伦厄市一座体育场馆内，随着场地的扩大，参与的人数也增长到了750人。DreamHack一跃成为瑞典第一大、斯堪的纳维亚半岛地区第三大的局域网赛事（LAN
+                                        party）。随后三年来参加DreamHack的人数稳步上升，到2001年DreamHack将举办地永久定在了延雪平市，... More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 news_list">
+                            <div class="news_body">
+                                <div class="col-lg-4 col-md-4 col-sm-5 hidden-xs newsphoto">
+                                    <img src="http://cn.msi.com/asset/resize/picture/cn/news-s/news_15120136315a1f7f3f9410c-jpg/405.jpg"
+                                        class="img-responsive">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 newstxt">
+                                    <h3>GP62MVR 7RF性能超出GTX1060 Max-Q游戏本21%！</h3>
+
+                                    <p>
+
+                                        许多微星的发烧友和用户们都知道微星游戏笔记本始终在散热上下足功夫。这次我想来测试GP62MVR搭载GTX 1060 3GB GDDR5显存（大陆为6GB）的笔记本与其他品牌的搭载GTX 1060 Max-Q 6GB显存的产品进行比较。来看看搭载3GB显存显卡的GP62MVR与Max-Q设计、6GB显存的其他产品性能差距究竟有多大？
+                                        搭载 GTX 1060显卡的 GP62MVR拥有更好的散热设计 当我把GP62MVR拿在手上，我感觉它的外观要比GE62还要薄。因为GP62M模具移除了经典的光驱设计从而使高度和厚度相比之前都有减少。GP62MVR所使用的是Cooler
+                                        Boost4散热系统，它拥有双风扇六铜管的配置。微星游戏本始终在同级别产品中争取做到更好。 GP62MVR的双风扇六铜管散热配置 其他品牌产品仅有3铜管 由此可见，GP62MVR在散热方面用料是实打实的，其他品牌的产品是GTX
+                                        1060 Max-Q设计的，热... More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="col-lg-12 col-md-12 col-sm-12 news_list">
+                            <div class="news_body">
+                                <div class="col-lg-4 col-md-4 col-sm-5 hidden-xs newsphoto">
+                                    <img src="http://cn.msi.com/asset/resize/picture/cn/news-s/news_15118573695a1d1cd98de7b-jpg/405.jpg"
+                                        class="img-responsive">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 newstxt">
+                                    <h3>GE63VR 7RF（GTX 1070）比GTX 1080 Max-Q游戏本更强悍！</h3>
+
+                                    <p>
+
+                                        大多数玩家为了获得更好的3D游戏体验而去购买高阶游戏本例如搭载GTX 1070、GTX 1080的GT或GE。但是你一定让你的游戏本发挥全部性能，不要像一些玩家花大价钱买高规格，却因为设计的限制只能发挥较低的性能。 GTX 1080 Max-Q作为“阉割版”显卡，是专门为轻薄游戏本设计的，可以降低散热量，但同时性能也更低了，甚至比GE63VR
+                                        7RF上的普通GTX 1070更低。通过GPU-Z我们可以发现他们频率的不同，GTX 1080 Max-Q的核心频率与显存频率比GTX 1080少了大概500MHz，因此性能大概比GTX
+                                        1080低了20%，我们再看看用不同方式使用benchmarks得出的结果。 超频模式下GE63VR 7RF Raider（GTX 1070）拥有更好表现 当我拿到GE63VR之后，首先做的就是测试它在3D中的表现，还有看看它在游戏中的表现是否比其他游戏本强，尤其是和搭载GTX
+                                        1080 Max-Q的产品进... More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div align="center" class="pt10">
+                        <a href="javascript:;"> 更多新闻</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 video_area">
+                <h2>Featured Videos</h2>
+
+                <div class="bx-wrapper" style="max-width: 1284px;">
+                    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 0px;">
+                        <div class="videobox" style="width: 2015%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox bx-clone" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwNzg1MDAwMA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859AE77D7000001503F06D6B7" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwNzg1MDAwMA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox bx-clone" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwNzcxMzA0NA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859AE73091C6257202E089ED2" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwNzcxMzA0NA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox bx-clone" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAxNzgwNzIzNg==">
+                                        <img src="https://vthumb.ykimg.com/0541040859B61C3100000136A701592D" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAxNzgwNzIzNg=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox bx-clone" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzIyNTQ5Njc5Mg==">
+                                        <img src="https://vthumb.ykimg.com/054104085A2FACA20000015756071DC5" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzIyNTQ5Njc5Mg=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzIzMzUzMzM0OA==">
+                                        <img src="https://vthumb.ykimg.com/054104085A336B210000011252009032" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzIzMzUzMzM0OA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzIzMzUzNDEzNg==">
+                                        <img src="https://vthumb.ykimg.com/054104085A336B811E59633D680A840E" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzIzMzUzNDEzNg=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzE0MDgwNjM2MA==">
+                                        <img src="https://vthumb.ykimg.com/054104085A016F281C649735F107A69E" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzE0MDgwNjM2MA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzEyODcxNDU0OA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859FAB0F300000156C5004CED" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzEyODcxNDU0OA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzEyODcxNDcwOA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859FAB1AA1F885E2A450719B0" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzEyODcxNDcwOA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzEyMDc5ODkzMg==">
+                                        <img src="https://vthumb.ykimg.com/0541040859F68CB30000017D4F037DAC" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzEyMDc5ODkzMg=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzEyMDc5ODg5Mg==">
+                                        <img src="https://vthumb.ykimg.com/0541040859F68C590000013F6706AD3C" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzEyMDc5ODg5Mg=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwMTM2MzA1Ng==">
+                                        <img src="https://vthumb.ykimg.com/0541040859A9068E000001512F008DCD" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwMTM2MzA1Ng=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwMTM2NzE2NA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859A9065B0000015C94022D54" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwMTM2NzE2NA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwMTM2NTM3Ng==">
+                                        <img src="https://vthumb.ykimg.com/0541040859A9065E0000013FC90527F2" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwMTM2NTM3Ng=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMjk4OTQyODM0NA==">
+                                        <img src="https://vthumb.ykimg.com/05410408599F89DA000001021903A96E" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMjk4OTQyODM0NA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMjk4MjgzMTU4OA==">
+                                        <img src="https://vthumb.ykimg.com/05410408599A772E00000147F20D6795" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMjk4MjgzMTU4OA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwNzcxMjc5Ng==">
+                                        <img src="https://vthumb.ykimg.com/0541040859AE73DF0000013314006FD0" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwNzcxMjc5Ng=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwNzcxMjQwNA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859AE70C3000001390B0125B7" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwNzcxMjQwNA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwNzg1MDAwMA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859AE77D7000001503F06D6B7" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwNzg1MDAwMA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAwNzcxMzA0NA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859AE73091C6257202E089ED2" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAwNzcxMzA0NA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzAxNzgwNzIzNg==">
+                                        <img src="https://vthumb.ykimg.com/0541040859B61C3100000136A701592D" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzAxNzgwNzIzNg=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzIyNTQ5Njc5Mg==">
+                                        <img src="https://vthumb.ykimg.com/054104085A2FACA20000015756071DC5" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzIyNTQ5Njc5Mg=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox bx-clone" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzIzMzUzMzM0OA==">
+                                        <img src="https://vthumb.ykimg.com/054104085A336B210000011252009032" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzIzMzUzMzM0OA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox bx-clone" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzIzMzUzNDEzNg==">
+                                        <img src="https://vthumb.ykimg.com/054104085A336B811E59633D680A840E" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzIzMzUzNDEzNg=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox bx-clone" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzE0MDgwNjM2MA==">
+                                        <img src="https://vthumb.ykimg.com/054104085A016F281C649735F107A69E" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzE0MDgwNjM2MA=="></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 vbox bx-clone" style="float: left; list-style: none; position: relative; width: 25px;">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <a href="javascript:;" class="youtube-button" data-src="http://player.youku.com/embed/XMzEyODcxNDU0OA==">
+                                        <img src="https://vthumb.ykimg.com/0541040859FAB0F300000156C5004CED" class="img-responsive">
+                                    </a>
+
+                                    <div class="home_play" data-src="http://player.youku.com/embed/XMzEyODcxNDU0OA=="></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bx-controls bx-has-pager bx-has-controls-direction">
+                        <div class="bx-pager bx-default-pager">
+                            <div class="bx-pager-item">
+                                <a href="javascript:;" data-slide-index="0" class="bx-pager-link">1</a>
+                            </div>
+                            <div class="bx-pager-item">
+                                <a href="javascript:;" data-slide-index="1" class="bx-pager-link">2</a>
+                            </div>
+                            <div class="bx-pager-item">
+                                <a href="javascript:;" data-slide-index="2" class="bx-pager-link">3</a>
+                            </div>
+                            <div class="bx-pager-item">
+                                <a href="javascript:;" data-slide-index="3" class="bx-pager-link">4</a>
+                            </div>
+                            <div class="bx-pager-item">
+                                <a href="javascript:;" data-slide-index="4" class="bx-pager-link active">5</a>
+                            </div>
+                        </div>
+                        <div class="bx-controls-direction">
+                            <a class="bx-prev" href="javascript:;">&lt;</a>
+                            <a class="bx-next" href="javascript:;">&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="youtube-box" style="display: none;">
+                <div id="youtube-box-iframe"></div>
+                <div id="youtube-close-button"></div>
+                <div id="youtube-close-button2"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="mainbox2" class="col-lg-10 col-md-9 col-sm-9 col-xs-12" style="display: block;">
+            <div class="pd_listbox ">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_4_20161115110631_582a7bb77198f.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT62VR 7RE
+                                <br>(Dominator Pro)-417CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="13953" link="GT62VR-7REDominator-Pro-417CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_4_20170630103249_5955b851e8650.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT75VR 7RF
+                                <br>(Titan Pro)-019CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1080)
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1080) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="13950" link="GT75VR-7RFTitan-Pro-019CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_9_20170630103307_5955b86352a86.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT75VR 7RE
+                                <br>(Titan)-004CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070)
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="13951" link="GT75VR-7RETitan-004CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_10_20170329181244_58db889cd69b0.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT73EVR 7RD-818CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1060) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="13819" link="GT73EVR-7RD-818CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_0_20170621115139_5949ed4b48393.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT73EVR 7RF
+                                <br>(Titan Pro)-864CN
+                                <br>(GeForce® GTX 1080)
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="13966" link="GT73EVR-7RFTitan-Pro-864CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_4_20161115110631_582a7bb77198f.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT62VR 7RE-436CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="14261" link="GT62VR-7RE-436CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_0_20161115110203_582a7aabca2c0.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT73VR 7RE-665CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="13390" link="GT73VR 7RE-665CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_10_20161215180320_58526a685e557.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT83VR 7RF-203CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1080 SLI) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12848" link="GT83VR-7RF-203CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_1_20161115110148_582a7a9c370ae.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT73VR 7RF-450CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1080) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12839" link="GT73VR-7RF-450CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_0_20161115110203_582a7aabca2c0.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT73VR 7RE-451CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12846" link="GT73VR-7RE-451CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_4_20161115110453_582a7b55046fd.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT72VR 7RE-467CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12953" link="GT72VR-7RE-467CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/global/product/product_0_20161115110442_582a7b4acadad.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT72VR 7RD-468XCN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1060) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12954" link="GT72VR-7RD-468XCN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/cn/product/product_7_20161208174335_58492b47d03f6.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT83VR 6RF-026CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1080) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12535" link="GT83VR-6RF-026CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/cn/product/product_0_20161208174251_58492b1b77fa6.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT83VR 6RE-007CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12644" link="GT83VR-6RE-007CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/cn/product/product_5_20161208174152_58492ae047c32.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT73VR 6RF-094CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1080) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12424" link="GT73VR 6RF-094CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/cn/product/product_2_20161208173931_58492a5330347.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT73VR 6RE-013CN
+                                <br>(GeForce® GTX 1070) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12476" link="GT73VR-6RE-013CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/cn/product/product_8_20161208174611_58492be345d80.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT72VR 6RD-082XCN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1060) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12450" link="GT72VR 6RD-082XCN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/cn/product/product_8_20161208174427_58492b7bc7583.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT62VR 6RD-093XCN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1060) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12595" link="GT62VR 6RD-093XCN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/cn/product/product_3_20161208174512_58492ba8e9bba.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT62VR 6RD-033CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1060) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12463" link="GT62VR-6RD-033CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pdbox">
+                        <a href="javascript:;">
+                            <img src="http://cn.msi.com/asset/resize/image/cn/product/product_1_20161208174652_58492c0c80176.png62405b38c58fe0f07fcef2367d8a9ba1/200.png"
+                                width="80%" class="img-responsive">
+                            <h3>
+                                GT72VR 6RD-059CN
+                                <br>(GeForce
+                                <sup>®</sup> GTX 1060) </h3>
+                        </a>
+                        <div class="sn-btn position-a" no="12421" link="GT72VR 6RD-059CN" style="padding:10px 0;">
+                            <a class="ui-corner-all" style="padding-left: 3px; padding-right:3px;border-radius:5px; margin-bottom: -10px; border:1px solid #373737; color: #888;">
+                            + 加入比较</a>
+                        </div>
+                    </div>
+                </div>
+                <form id="temp_post_form" class="hide">
+                    <input type="hidden" name="product_line" value="Notebook">
+                    <input type="hidden" name="product" value="Notebook">
+                    <input type="hidden" name="id[]" value="643">
+                    <input type="hidden" name="filter" value="1">
+                    <input type="hidden" name="msi_official_csrf" value="bdc713e92a6206e6932b1e16812659e1">
+                </form>
+                <ul class="jump_page fr">
+                    <li class="on">
+                        <a>1</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">2</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">3</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">&gt;</a>
+                    </li>
+                </ul>
+            </div>           
+        </div>
+    </div>
+</div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1 col-sm-offset-0">
+                <div class="col-sm-2 col-md-2 col-lg-2 ftcol">
+                    <a class="visible-xs" data-toggle="collapse" href="javascript:;" aria-expanded="true">
+                        <h2>
+                            社区 </h2>
+                    </a>
+                    <h2 class="hidden-xs">
+                        社区 </h2>
+                    <ul class="f01 footer-menu-list in" id="list-Community">
+                        <li>
+                            <a href="javascript:;">社群媒体</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Reward</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">微星论坛</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Gaming Teams</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">Blogs</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <div class=" col-sm-2 col-md-2 col-lg-2 ftcol">
+                    <a class="visible-xs" data-toggle="collapse" href="#list-Service" aria-expanded="true">
+                        <h2>
+                            技术支持 </h2>
+                    </a>
+                    <h2 class="hidden-xs">
+                        技术支持 </h2>
+                    <ul class="f01 footer-menu-list in" id="list-Service">
+                        <li>
+                            <a href="javascript:;">下载中心</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">维修中心</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">保修政策</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix  visible-xs"></div>
+                <div class=" col-sm-2 col-md-2 col-lg-2 ftcol">
+                    <a class="visible-xs" data-toggle="collapse" href="javascript:;">
+                        <h2>
+                            新闻 </h2>
+                    </a>
+                    <h2 class="hidden-xs">
+                        新闻 </h2>
+                    <ul class="f01 footer-menu-list in" id="list-News">
+                        <li>
+                            <a href="javascript:;">新闻</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">获奖荣誉</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <div class="clearfix  visible-xs"></div>
+                <div class="col-sm-2 col-md-2 col-lg-2 ftcol">
+                    <a class="visible-xs" data-toggle="collapse" href="#list-Media" aria-expanded="true">
+                        <h2>
+                            媒体 </h2>
+                    </a>
+                    <h2 class="hidden-xs">
+                        媒体 </h2>
+                    <ul class="f01 footer-menu-list in" id="list-Media">
+                        <li>
+                            <a href="javascript:;">壁纸下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">影音中心</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">MSI Apps</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <div class="clearfix  visible-xs"></div>
+                <div class="col-sm-2 col-md-2 col-lg-2 ftcol">
+                    <a class="visible-xs" data-toggle="collapse" href="#list-about" aria-expanded="true">
+                        <h2>
+                            关于微星 </h2>
+                    </a>
+                    <h2 class="hidden-xs">
+                        关于微星 </h2>
+                    <ul class="f01 footer-menu-list in" id="list-about">
+                        <li>
+                            <a href="javascript:;">公司简介</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">品牌故事</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">品质标准</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">技术创新</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">品质认证</a>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+                <div class="clearfix  visible-xs"></div>
+            </div>
+    
+        </div>
+        <div class="row ">
+            <div class="col-md-10 col-md-offset-1 quicklinks">
+                <div class="  col-lg-6 ">
+                    <span class="copyright">
+                        Copyright © 2015 版权为微星科技股份有限公司所有&nbsp;&nbsp;&nbsp;
+                        <a href="javascript:;">沪ICP备12035475号</a>
+                    </span>
+                </div>
+                <div class="col-lg-6 col-md-12 ">
+                    <ul>
+                        <li class="col-md-2 col-xs-12">
+                            <a href="javascript:;">联系我们</a>
+                        </li>
+                        <li class="col-md-2 col-xs-12">
+                            <a href="javascript:;">隐私保护权政策</a>
+                        </li>
+                        <li class="col-md-2 col-xs-12">
+                            <a href="javascript:;">网站使用条款</a>
+                        </li>
+                    </ul>
+                    <div class="footer_bar">
+                        <div class="language">
+                            <div class="flag">
+                                <img src="https://cn.msi.com/images/front/global.png" alt="language">
+                            </div>
+                            <a href="javascript:;">China / 简体中文</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+    
+                <div class="cn-QRcode">
+                    <div class="col-md-6 col-md-offset-6 pull-right">
+                        <div class="col-xs-6 col-lg-2 pull-right cn-Space">
+                            <p class="text-center">微星游戏板卡</p>
+                            <img src="http://asset.msi.com/global/picture/news/page_icon/weixinMB.jpg" border="0" width="95">
+                        </div>
+                        <div class="col-xs-6 col-lg-2 pull-right cn-Space">
+                            <p class="text-center">微星游戏主机</p>
+                            <img src="http://asset.msi.com/global/picture/news/page_icon/msispb.jpg" border="0" width="95">
+                        </div>
+                        <div class="col-xs-6 col-lg-2 pull-right cn-Space">
+                            <p class="text-center">微星游戏笔记本</p>
+                            <img src="http://cn.msi.com/asset/cn/picture/news/page_icon/qrcode_for_gh_71b968a10545_430.jpg" border="0" width="95">
+                        </div>
+                        <div class="col-xs-6 col-lg-2 pull-right cn-Space">
+                            <p class="text-center">全球客户关怀中心</p>
+                            <img src="http://asset.msi.com/global/picture/news/page_icon/msiglobalcode2.png" border="0" width="95">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/list.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/2.0.1/jquery.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery-validate.js"></script>
+    
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="../dist/jquery-ui.min.css">
+    
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/jquery-ui-1.9.2.custom.css">
+    <link rel="stylesheet" href="../dist/lr.css">
+    <link rel="stylesheet" href="../dist/iconfont.css">
+    <title>登录</title>
+</head>
+<body>
+<!-- navheader -->
+    <nav class="navbar navbar-inverse gr-topnav" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gr-navbar-top">
+                <i class="iconfont icon-fa-globe"></i>
+            </button>
+
+            <a class="navbar-brand" href="javascript:;">
+                <img src="https://account-cn.msi.com/images/2017_msi_dragon_spirit_logo.png" class="img-responsive">
+            </a>
+
+        </div>
+        <div id="gr-navbar-top" class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-left hide">
+                <li>
+                    <p class="navbar-text gr-topnav-title">
+                        <a href="javascript:;">MSI 会员注册中心</a>
+                    </p>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <button id="select-language-btn" type="button" class="btn btn-gray btn-xs-block" data-toggle="modal" href="#language">
+                    <span>Chinese / 简体中文</span>
+                </button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont icon-fa-globe"></i> MSI 官方网站</a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont icon-fa-comments"></i> MSI 论坛</a>
+                </li>
+                <li>
+                    <a class="xs-language-btn" data-toggle="modal" href="javascript:;">Language ( zh-cn )</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- content-fluid -->
+<div class="container-fluid">
+    <div class="row mainbox">
+        <!-- Right -->
+        <div class="col-sm-5 mm-index">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>欢迎光临 MSI 在线产品注册中心</h1>
+                    <h2 class="whitetxt">立即注册您的 MSI 产品以尽享益处!</h2>
+                    <ul class="fa-ul mm-index-ul">
+                        <li>
+                            <i class="iconfont icon-duihao"></i>保修注册
+                            <button class="btn btn-xs btn-gray" data-toggle="modal" href="#notice-warranty">更多</button>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-duihao"></i>专享的促销和活动更新</li>
+                        <li>
+                            <i class="iconfont icon-duihao"></i>更快的服务和产品支持</li>
+                        <li>
+                            <i class="iconfont icon-duihao"></i>查看您目前已注册的 MSI 产品</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Privacy -->
+            <div class="row left-privacy">
+                <div class="col-xs-12">
+                    <h2>MSI 尊重您的隐私</h2>
+                    <p>MSI 不会用客户信息做任何交易。重要的是，由您来掌握着 MSI 与您联系的方式。我们在注册结束时会收集您的个人信息但不会泄露出去，并鼓励您查看我们完整的在线隐私策略以了解更多细则。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-sm-offset-1 graybox">
+
+            <div class="index_logonbox">
+                <h1>Login</h1>
+                <form action="/loginCheck" accept-charset="utf-8" id="gr-login-form" class="form-horizontal"
+                    method="POST" role="form" novalidate="novalidate">
+                    <div style="display:none;">
+                        <input type="hidden" name="msi_csrf" value="9de73d1d8a12ca323a1f2b23a4517073">
+                    </div>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label class="col-sm-3 col-lg-2 col-lg-offset-1 control-label">电子邮件</label>
+                        <div class="col-sm-9 col-lg-8">
+                            <input type="email" name="email" class="form-control" tabindex="1" placeholder="电子邮件" autofocus="">
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label class="col-sm-3 col-lg-2 col-lg-offset-1 control-label">密码</label>
+                        <div class="col-sm-9 col-lg-8">
+                            <input type="password" name="password" class="form-control" tabindex="2" placeholder="密码">
+                            <p class="help-block">
+                                <a id="home-forget-password-btn" tabindex="6" href="https://account-cn.msi.com/home/forget_password">忘记了密码?</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Captcha -->
+                    <div class="form-group">
+                        <label class="col-sm-3 col-lg-2 col-lg-offset-1 control-label">验证码</label>
+                        <div class="col-sm-9 col-lg-8">
+                            <a href="javascript:;" id="captcha-reflush">
+                                <img id="captcha-img" class="img-responsive" src="https://account-cn.msi.com/home/securimage_show?sid=0.15766232115116008"
+                                    border="0">
+                            </a>
+                            <input class="form-control text-center" name="captcha" tabindex="3" placeholder="请计算并输入图片中的答案" data-toggle="tooltip" data-placement="top"
+                                title="" data-original-title="请计算并输入图片中的答案">
+                            <span class="help-block">请计算并输入图片中的答案</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-9 col-sm-offset-3 ">
+                            <!-- <button id="home-login-btn" type="submit" tabindex="4" class="btn btn-default btn-xs-block">登录</button> -->
+                            <input id="home-login-btn" type="submit" tabindex="4" class="btn btn-default btn-xs-block" value="登录">
+                            <a href="register.html" tabindex="5" class="btn btn-link btn-xs-block link-gaming" data-toggle="tooltip"
+                                title data-original-title="尊敬的 MSI 客户：<br/>
+MSI 强烈建议我们的客户注册您的产品，以获得更快捷的技术支持和保修服务（包括延长保修）。MSI 的产品注册属自愿行为；不注册并不会失去您在质保期内的保修权利。<br/>
+">创建帐户</a>
+
+                        </div>
+                    </div>
+
+
+                    <input type="hidden" name="action" value="login">
+                </form>
+            </div>
+            <!-- Quick Login -->
+            <div class="index_logonbox2">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                        <p>您可以使用以下帐号密码直接登入为 MSI 会员</p>
+                        <div class="quick-login-button">
+                            <div id="wb_connect_btn" style="padding: 2%;"></div>
+                            <a class="style-btn style-wechat" tabindex="9" data-source="Wechat" href="javascript:;">
+                                <i class="iconfont icon-cntencentwechat"></i> 微信</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy -->
+        <div class="row bottom-privacy">
+            <div class="col-xs-12">
+                <h2>MSI 尊重您的隐私</h2>
+                <p>MSI 不会用客户信息做任何交易。重要的是，由您来掌握着 MSI 与您联系的方式。我们在注册结束时会收集您的个人信息但不会泄露出去，并鼓励您查看我们完整的在线隐私策略以了解更多细则。</p>
+            </div>
+        </div>
+        <!-- Privacy -->
+
+    </div>
+</div>
+<script src="../js/login.js"></script>
+    
+</body>
+</html>
